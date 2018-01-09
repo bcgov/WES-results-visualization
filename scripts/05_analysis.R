@@ -10,4 +10,11 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and limitations under the License.
 
+# Analysis.
 
+# 1. Turn regression weights into a network graph.
+
+graph <- graph_from_data_frame(regression_weights, directed=TRUE)
+
+# 2. Plot the graph.
+plot(graph)

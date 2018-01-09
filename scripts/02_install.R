@@ -10,9 +10,12 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and limitations under the License.
 
-source("scripts/01_config.R")
-source("scripts/02_install.R")
-source("scripts/03_load.R")
-source("scripts/04_clean.R")
-source("scripts/05_analysis.R")
-source("scripts/06_output.R")
+# Install and load all required packages.
+
+install.packages(c("readr", "igraph"))
+
+require("readr")
+require("igraph")
+
+# Source the functions
+source(paste0(ROOT_FOLDER, "/scripts/functions.R"))

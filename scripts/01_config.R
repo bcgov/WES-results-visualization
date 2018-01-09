@@ -10,4 +10,11 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and limitations under the License.
 
+# Project configuration file.
 
+# Edit this if necessary to reflect your project's root folder
+ROOT_FOLDER = getwd()
+
+# No need to edit past this point!
+
+OUTPUT_FOLDER = paste0(ROOT_FOLDER, "/output")
