@@ -4,3 +4,5 @@
 .Ruserdata
 out/
 internal.R
+.DS_Store
+*.Rproj
