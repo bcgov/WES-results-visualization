@@ -11,7 +11,7 @@
 # See the License for the specific language governing permissions and limitations under the License.
 
 source("scripts/01_config.R")
-source("scripts/02_install.R")
+# source("scripts/02_install.R")
 source("scripts/03_load.R")
 source("scripts/04_clean.R")
 source("scripts/05_analysis.R")

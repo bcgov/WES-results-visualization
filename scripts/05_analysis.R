@@ -12,9 +12,17 @@
 
 # Analysis.
 
-# 1. Turn regression weights into a network graph.
+# Turn regression weights into a network graph.
 
-graph <- graph_from_data_frame(regression_weights, directed=TRUE)
+graph <- graph_from_data_frame(regression_weights, directed = TRUE)
+vertices <- as_tibble(vertex_attr(graph))
 
-# 2. Plot the graph.
-plot(graph)
+# Add the x and y values to the vertices
+vertices <- left_join(vertices, graph_layout, by = c('name' = 'Node'))
+# TODO: Assert the post-join tibble has the same length as pre-join.
+
+# Custom layout from the graph_layout
+custom_layout <- as.matrix(vertices %>% select(c('x', 'y')))
+
+# Plot the graph.
+plot(graph, layout = custom_layout)

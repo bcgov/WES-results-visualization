@@ -12,10 +12,12 @@
 
 # Install and load all required packages.
 
-install.packages(c("readr", "igraph"))
+install.packages(c("readr", "igraph", "dplyr", "purrr"))
 
 require("readr")
 require("igraph")
+require("dplyr")
+require("purrr")
 
 # Source the functions
 source(paste0(ROOT_FOLDER, "/scripts/functions.R"))

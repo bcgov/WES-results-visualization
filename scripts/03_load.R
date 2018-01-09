@@ -13,3 +13,4 @@
 # Load weights.
 
 regression_weights <- read_csv(paste0(ROOT_FOLDER, "/data/WES_2015_Regression_Weights.csv"))
+graph_layout <- read_csv(paste0(ROOT_FOLDER, "/data/graph_layout.csv"))
