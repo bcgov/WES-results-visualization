@@ -21,6 +21,18 @@ vertices <- as_tibble(vertex_attr(graph))
 vertices <- left_join(vertices, graph_layout, by = c('name' = 'Node'))
 # TODO: Assert the post-join tibble has the same length as pre-join.
 
+# Color the edges
+E(graph)$color <- 'grey'
+E(graph)$color[E(graph)$Weight > 0.2] <- 'blue'
+E(graph)$color[E(graph)$Weight > 0.4] <- 'red'
+
+# Other edge customization
+E(graph)$arrow.size <- 0.5
+E(graph)$arrow.width <- 1.2
+E(graph)$width <- 2
+
+V(graph)$color <- 'grey'
+
 # Custom layout from the graph_layout
 custom_layout <- as.matrix(vertices %>% select(c('x', 'y')))
 
