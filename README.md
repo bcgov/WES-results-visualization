@@ -1,43 +1,33 @@
-<!-- README.md is generated from README.Rmd. Please edit that file -->
+# WES Results Visualization (R)
 
+A preliminary exploration of visualizing the WES pathways using R. Generates a
+simple network graph using the `igraph` package.
 
+## Usage
 
-Description of Analysis Code
-============================
+Run the `run_all.R` script in the project root.
 
-### Usage
+## Data
 
-Describe data being used (links), and how to run. Eg:
+Data is from the 2015 WES survey, and may be found in the `/data` folder. The
+CSVs are adapted from the Excel documents. `graph_layout.csv` uses manually-set
+*x, y* coordinates to place the various nodes.
 
-There are four core scripts that are required for the analysis, they need to be run in order:
+## Project Status
 
--   01\_clean.R
--   02\_analysis.R
--   03\_visualize.R
--   04\_output.R
+Alpha. Most development work is being done on the web version (repo TBD).
 
-Example
--------
-
-This is a basic example which shows you how to solve a common problem:
-
-``` r
-## basic example code
-```
-
-### Project Status
-
-### Getting Help or Reporting an Issue
+## Getting Help or Reporting an Issue
 
 To report bugs/issues/feature requests, please file an [issue](https://github.com/bcgov/%3Crepo-name%3E/issues/).
 
-### How to Contribute
+## How to Contribute
 
 If you would like to contribute, please see our [CONTRIBUTING](CONTRIBUTING.md) guidelines.
 
 Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
 
-### License
+## License
 
     Copyright 2017 Province of British Columbia
 
