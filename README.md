@@ -1,6 +1,6 @@
 # WES Results Visualization (R)
 
-[![img](https://img.shields.io/badge/Lifecycle-Maturing-007EC6)](https://github.com/bcgov/repomountie/blob/master/doc/lifecycle-badges.md)
+[![img](https://img.shields.io/badge/Lifecycle-Experimental-339999)](https://github.com/bcgov/repomountie/blob/master/doc/lifecycle-badges.md)
 
 A preliminary exploration of visualizing the WES pathways using R. Generates a
 simple network graph using the `igraph` package.
